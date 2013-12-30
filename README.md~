@@ -6,7 +6,7 @@ lunarcoin is a better version of Bitcoin using scrypt as a proof-of-work algorit
     	subsidy halves in 840k blocks (~4 years)
     	~100 million total coins
    	64 coins per block
-    	1000 blocks to retarget difficulty
+    	
 
 Why we also say it's better than Litecoin, because lunarcoin has one of the fastest payouts. So you get very very fast you're money
 
