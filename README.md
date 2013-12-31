@@ -2,10 +2,10 @@
 
 lunarcoin is a better version of Bitcoin using scrypt as a proof-of-work algorithm.
 
-    	20 seconds block targets
+        20 seconds block targets
     	subsidy halves in 840k blocks (~4 years)
     	~100 million total coins
-   	64 coins per block
+    	64 coins per block
     	
 
 Why we also say it's better than Litecoin, because lunarcoin has one of the fastest payouts. So you get very very fast you're money
@@ -39,17 +39,34 @@ cd src; make -f makefile.unix test
 
 ##Installing
 
-git clone https://github.com/lunarcoin/lunarcoin.git
-cd lunarcoin/src 
-make -f makefile.unix 
+        git clone https://github.com/lunarcoin/lunarcoin.git
+        cd lunarcoin/src 
+        make -f makefile.unix USE_UPNP=-
 
 ##Run it
 
-./lunarcoind
-./lunarcoind getnewaddres ( get a Lunarcoin Wallet Address )
-./lunarcoind setgenerate true 16 ( start Mining and Help the Network to get faster ( 16 is a value you can change and make Higer or Lower ) )
-./lunarcoind getmininginfo ( Watch the Hashspeed ( Mining Speed ) )
+        ./lunarcoind
+        ./lunarcoind getnewaddres ( get a Lunarcoin Wallet Address )
+        ./lunarcoind setgenerate true 16 ( start Mining and Help the Network to get faster ( 16 is a value you can                                                  change and make Higer or Lower ) )
+        
+        ./lunarcoind getmininginfo ( Watch the Hashspeed ( Mining Speed ) )
+        
 
+##Make a Wallet 
+
+Open a new Terminal:
+
+        qmake USE_UPNP=-
+        make
+
+Open a new Terminal ( only for Ubuntu )
+
+        sudo nautilus
+        Ctrl H ( now you see hidden content )
+        Open .lunarcoin-qt
+        execute lunarcoin-qt
+        
+        
 
 
 
